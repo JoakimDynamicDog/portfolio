@@ -1,4 +1,5 @@
 import './globals.css'
+import "./styles/space.css"
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 import Header from '@/components/Header'
@@ -12,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-white text-gray-900">
+    <html lang="en" className="h-full">
+      <body className="h-full flex min-h-screen flex-col space-background">
         <Header />
-        <main className="mx-auto max-w-4xl px-4">{children}</main>
+        <main className="mx-auto w-full max-w-4xl flex-1 px-4">{children}</main>
         <Footer />
         <ToastContainer
           position="top-right"

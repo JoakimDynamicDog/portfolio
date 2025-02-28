@@ -46,10 +46,10 @@ export default function ContactPage() {
 
   return (
     <div className="max-w-md mx-auto py-8">
-      <h1 className="text-2xl font-bold mb-4">Contact Me</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-600">Contact Me</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block mb-1 font-medium">Name</label>
+          <label className="block mb-1 font-medium text-yellow-500">Name</label>
           <input
             required
             type="text"
@@ -61,7 +61,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block mb-1 font-medium">Email</label>
+          <label className="block mb-1 font-medium text-yellow-500">Email</label>
           <input
             required
             type="email"
@@ -73,7 +73,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block mb-1 font-medium">Subject</label>
+          <label className="block mb-1 font-medium text-yellow-500">Subject</label>
           <input
             required
             type="text"
@@ -85,7 +85,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label className="block mb-1 font-medium">Message</label>
+          <label className="block mb-1 font-medium text-yellow-500">Message</label>
           <textarea
             required
             name="message"
@@ -99,30 +99,59 @@ export default function ContactPage() {
         <button
           type="submit"
           disabled={loading}
-          className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-blue-700"
+          className="px-4 py-2 bg-black text-yellow-400 rounded hover:bg-gray-900"
         >
           {loading ? "Sending..." : "Send Message"}
         </button>
       </form>
 
       <div className="mt-8 text-center">
-        <h3 className="mb-2 text-xl font-semibold mb-5">Or find me on</h3>
+        <h3 className="mb-2 text-xl font-semibold mb-5 text-yellow-500">&lt; Or find me on /&gt;</h3>
         <div className="flex justify-center space-x-6 text-2xl">
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/joakim-%C3%A5str%C3%B6m-863a49299/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700"
-          >
-            <AiFillLinkedin />
-          </a>
-          <a
-            href="https://github.com/your-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-black"
-          >
-            <AiFillGithub />
+            className="
+              inline-flex
+              h-10
+              w-10
+              items-center
+              justify-center
+              rounded-full
+              border-2
+              border-yellow-600
+              text-white
+              hover:text-black
+              transition-colors
+              duration-200
+              ease-in-out
+              "
+            >
+              <AiFillLinkedin className="text-xl" />
+            </a>
+
+            <a
+              href="https://github.com/Juicy-Juicyman"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                h-10
+                w-10
+                items-center
+                justify-center
+                rounded-full
+                border-2
+                border-yellow-600
+                text-white
+                hover:text-black
+                transition-colors
+                duration-200
+                ease-in-out
+                "
+              >
+            <AiFillGithub className="text-xl" />
           </a>
         </div>
       </div>
