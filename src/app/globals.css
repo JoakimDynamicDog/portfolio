@@ -4,6 +4,7 @@
 
 
 
+
 @layer base {
   :root {
 
@@ -120,6 +121,19 @@
   }
 }
 
+/* FOR DEBUGGING UI */
+* { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
 html, body {
   height: 100%;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* TODO: Fixa scrollbar */
+

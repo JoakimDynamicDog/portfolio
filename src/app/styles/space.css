@@ -1,39 +1,30 @@
-/* styles/space.css (example file) */
-
 .space-background {
-  /* A dark, base color */
   background-color: #0a0e1a;
-  
-  /* Stacked gradients for a subtle cosmic feel */
+ 
   background-image: 
-    /* 1) A radial gradient with a light glow */
     radial-gradient(
       circle at 15% 25%,
       rgba(255, 255, 255, 0.15),
       transparent 40%
     ),
-    /* 2) Another radial glow */
     radial-gradient(
       circle at 80% 35%,
       rgba(255, 255, 255, 0.1),
       transparent 40%
     ),
-    /* 3) A larger “cloud” shape */
     radial-gradient(
       circle at 50% 90%,
       rgba(255, 255, 255, 0.07),
       transparent 50%
     ),
-    /* 4) A subtle linear gradient overlay for color variation */
     linear-gradient(
       120deg,
-      #1f2941 0%,
-      #151a2a 40%,
-      #0a0e1a 80%
+      #212329 0%,
+      #10121b 40%,
+      #0a0303 80%
     );
 
-  /* Make sure gradients scale to fill the container */
   background-size: cover;
-  background-attachment: fixed; /* Looks nice on tall pages (parallax effect) */
+  background-attachment: fixed; 
   background-repeat: no-repeat;
 }

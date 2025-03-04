@@ -3,10 +3,10 @@ import { NextResponse } from "next/server"
 
 export async function POST(request: Request) {
   try {
-    const { name, email, subject, message } = await request.json()
+    const { name, email, message } = await request.json()
 
     
-    if (!name || !email || !subject || !message) {
+    if (!name || !email || !message) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
     }
 
@@ -24,13 +24,11 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: "joakim.astrom@live.se",
       to: process.env.CONTACT_EMAIL, 
-      subject: `Contact Form: ${subject}`,
       text: `
         You've got a new message:
 
         Name: ${name}
         Email: ${email}
-        Subject: ${subject}
         Message:
         ${message}
       `,
