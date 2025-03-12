@@ -18,7 +18,7 @@ export default function MobileNav() {
     <div className="md:hidden w-full flex justify-end">
       <Sheet>
         <SheetTrigger>
-          <AlignJustify className="text-yellow-600 mr-2"/>
+          <AlignJustify className="text-yellow-400 mr-2"/>
         </SheetTrigger>
         <SheetContent side="right">
           <SheetHeader>

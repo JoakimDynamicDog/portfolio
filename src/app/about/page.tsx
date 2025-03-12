@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
     <div className="py-12">
-      <h2 className="mb-6 text-3xl font-bold text-yellow-600">About Me</h2>
+      <h2 className="mb-6 heading-small">About Me</h2>
       <p className="mb-4 text-white">
         I am a frontend developer who also enjoys working on backend projects,
         with a passion for creating clean, user-centric applications. I
@@ -44,7 +44,7 @@ export default function AboutPage() {
             </tr>
             <tr>
               <td className="px-4 py-3 font-semibold text-yellow-600">CMS</td>
-              <td className="px-4 py-3 text-white">WordPress, Payload, Storyblok</td>
+              <td className="px-4 py-3 text-white">WordPress, Payload, Storyblock</td>
             </tr>
             <tr>
               <td className="px-4 py-3 font-semibold text-yellow-600">Languages</td>

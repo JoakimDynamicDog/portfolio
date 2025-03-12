@@ -6,7 +6,7 @@ import { projectsData } from "@/app/data/data"
 export default function ProjectsPage() {
   return (
     <div className="py-12">
-      <h2 className="mb-6 text-3xl font-bold text-yellow-600">Projects</h2>
+      <h2 className="mb-6 heading-small">Projects</h2>
 
       <div className="grid gap-8 sm:grid-cols-2">
         {projectsData.map((project, index) => {

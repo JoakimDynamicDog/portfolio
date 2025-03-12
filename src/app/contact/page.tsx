@@ -48,7 +48,7 @@ export default function ContactPage() {
   return (
       <>
         <div className="form-container">
-          <h1 className="text-2xl font-bold mb-4 text-yellow-500">Contact Me</h1>
+          <h1 className="mb-4 heading-small">Contact Me</h1>
           <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
               <input
@@ -102,7 +102,7 @@ export default function ContactPage() {
                 justify-center
                 rounded-full
                 border-2
-                border-yellow-600
+                border-yellow-400
                 text-white
                 hover:text-yellow-600
                 transition-colors
@@ -124,7 +124,7 @@ export default function ContactPage() {
                 justify-center
                 rounded-full
                 border-2
-                border-yellow-600
+                border-yellow-400
                 text-white
                 hover:text-yellow-600
                 transition-colors

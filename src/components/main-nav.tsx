@@ -10,7 +10,7 @@ export default function MainNav() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </Link>
-      <nav className="flex items-center gap-3 lg:gap-4 text-yellow-600">
+      <nav className="flex items-center gap-3 lg:gap-4 text-yellow-400">
         <Link href="/">Home</Link>
         <Link href="/projects">Project</Link>
         <Link href="/about">About</Link>

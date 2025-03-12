@@ -122,10 +122,10 @@
 }
 
 /* FOR DEBUGGING UI */
-* { 
+/* * { 
   outline: 1px solid red;
   outline-offset: -1px;
-}
+} */
 
 html, body {
   height: 100%;
@@ -136,4 +136,16 @@ html, body {
 }
 
 /* TODO: Fixa scrollbar */
+
+@layer components {
+  .heading {
+    @apply text-yellow-400 text-4xl font-bold sm:text-5xl;
+  }
+}
+
+@layer components {
+  .heading-small {
+    @apply text-yellow-400 text-lg font-bold sm:text-3xl;
+  }
+}
 
