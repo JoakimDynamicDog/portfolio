@@ -44,7 +44,7 @@ export default function AboutPage() {
             </tr>
             <tr>
               <td className="px-4 py-3 font-semibold text-yellow-600">CMS</td>
-              <td className="px-4 py-3 text-white">WordPress, Payload, Storyblock</td>
+              <td className="px-4 py-3 text-white">WordPress, Payload, Storyblok</td>
             </tr>
             <tr>
               <td className="px-4 py-3 font-semibold text-yellow-600">Languages</td>

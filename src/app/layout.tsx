@@ -1,6 +1,5 @@
 import "./globals.css"
 import "./styles/space.css"
-import "./styles/testBackground.css"
 import type { Metadata } from "next"
 import { ReactNode } from "react"
 import Footer from "@/components/Footer"
